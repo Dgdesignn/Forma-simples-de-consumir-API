@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table{
+            width:720px;
+            margin:120px auto;
+            border-collapse: collapse;
+        }
+        tr{
+            margin: 0;
+            font-family: arial;
+        }
+        tr:nth-last-child(even){
+            background-color: dodgerblue;
+            color: #fff;
+        }
+        td{
+            margin:0;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+      
+    </table>
+
+    <script>
+        async function getContent(){
+            try {
+                const reponse = await fetch('http://localhost:4567/');
+                //console.log(reponse)
+                const data = await reponse.json();
+                render(data);
+            } catch (error) {
+                console.log('erro')
+            } 
+        } 
+
+        function render(users){
+            let output = ''
+            for(let user of users){
+                output += `
+                <tr>
+                    <td>${user.name}</td> 
+                    <td>${user.email}</td>
+                </tr>
+                `
+            }
+            const th = `
+                <tr style="text-align:left; background-color:#0088ff22; ;">
+                    <th style="padding:10px">Nome</th>
+                    <th>Email</th>
+                </tr>
+                `; 
+            document.querySelector('table').innerHTML=th+output
+               
+        }
+    
+        getContent();
+    </script>
+</body>
+</html>
