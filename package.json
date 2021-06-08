@@ -1,7 +1,7 @@
 {
   "name": "API",
   "version": "1.0.0",
-  "description": "",
+  "description": "promovendo conflito",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js"
