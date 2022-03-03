@@ -1,21 +1,14 @@
-#DEPENDENCIAS
+# DEPENDENCIAS
 *Expresse
-    serve para criar routas;
-
-*Nodemon
- serve para outo execução do js;
-
 *Cors 
-serve para dar permissão a qualquer um que pretende consumir a API;
-
 *Axios
-serve para consumir API no backEnd;
 
-é uma plicação simples que consome uma API do site 
+`Em poucas linhas de código, mostro como consumir uma api no front-end com javascript puro
+ Também consumi a mesma API no back-end usando o axios
+`
 
-https://jsonplaceholder.typicode.com/ 
+[API](https://jsonplaceholder.typicode.com/ )
 
-Esta API disponibiliza dados de usuário fictício, no qual nós usamos apenas o email e nome.
+`Esta API disponibiliza dados de usuário fictício, no qual nós usamos apenas o email e nome.`
 
-OBS:
-Me ajudem a implementar boas práticas para consumo de uma API.
+## Obs.: Me ajudem a implementar boas práticas para consumo de uma API.
