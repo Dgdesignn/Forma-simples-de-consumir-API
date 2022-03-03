@@ -7,8 +7,8 @@
  Também consumi a mesma API no back-end usando o axios
 `
 
-[API](https://jsonplaceholder.typicode.com/ )
+[API LINK](https://jsonplaceholder.typicode.com/ )
 
 `Esta API disponibiliza dados de usuário fictício, no qual nós usamos apenas o email e nome.`
 
-## Obs.: Me ajudem a implementar boas práticas para consumo de uma API.
+### Obs.: Me ajudem a implementar boas práticas para consumir uma API.
